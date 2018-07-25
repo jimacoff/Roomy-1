@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Create your place</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mt-3">
+        <%= form_for @room do |f| %>
+            <form>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <%= f.label :home_type %><br/>
+                            <%= f.select :home_type , [["Apartment", "Apartment"], ["House", "House"], ["Room", "Room"]],
+                                                                    id: "home_type", prompt:"Select...", class:"form-control" %>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <%= f.label :room_type %><br/>
+                            <%= f.select :room_type , [["Entire", "Entire"], ["Private", "Private"], ["Shared", "Shared"]],
+                                                                    id: "room_type", prompt:"Select...", class:"form-control" %>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <%= f.label :accommodate %><br/>
+                            <%= f.select :accommodate , [["1", 1], ["2", 2], ["3", 3], ["4+", 4]],
+                                                                    id: "accommodate", prompt:"Select...", class:"form-control" %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <%= f.label :bed_room %><br/>
+                            <%= f.select :bed_room , [["1", 1], ["2", 2], ["3", 3], ["4+", 4]],
+                                                                        id: "bed_room", prompt:"Select...", class:"form-control" %>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <%= f.label :bath_room %><br/>
+                            <%= f.select :bath_room , [["1", 1], ["2", 2], ["3", 3]],
+                                                                        id: "bath_room", prompt:"Select...", class:"form-control" %>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <%= f.submit "Submit", class: "btn btn-primary"  %>
+                    </div>
+                </div>
+            </form>
+            <% end %>
+    </div>
+</div>
