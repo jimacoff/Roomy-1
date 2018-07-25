@@ -70,6 +70,7 @@ Rails.application.configure do
     enable_starttls_auto: true,
     authentication: 'plain',
     user_name: 'fcourt.polska@gmail.com',
+    #!!!!!!
     password: 'fcourt'
   }
 
@@ -91,7 +92,8 @@ Rails.application.configure do
   #   port: 587,
   #   domain: 'sandboxdc967ecd7c9b4d3d9e4e9f56dacaf1be.mailgun.org',
   #   # authentication: 'plain',
-  #   user_name: 'postmaster@sandboxdc967ecd7c9b4d3d9e4e9f56dacaf1be.mailgun.org',
+      #!!!!!!
+  #   user_name: '',
   #   password: '4018f4d0489194254d9267b760c85903-3b1f59cf-6dd659664018f4d0489194254d9267b760c85903-3b1f59cf-6dd65966'
   # }
 
