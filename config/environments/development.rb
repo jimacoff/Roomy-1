@@ -70,7 +70,7 @@ Rails.application.configure do
     enable_starttls_auto: true,
     authentication: 'plain',
     user_name: 'fcourt.polska@gmail.com',
-    password: 'fcourt12345'
+    password: 'fcourt'
   }
 
   config.paperclip_defaults = {
